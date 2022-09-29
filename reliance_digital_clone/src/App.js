@@ -3,7 +3,7 @@ import Home from "./Components/Pages/Home"
 
 function App() {
   return (
-    <Home />
+    <Home pos="relative" />
   );
 }
 
