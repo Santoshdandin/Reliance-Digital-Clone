@@ -1,9 +1,9 @@
 import './App.css';
-import Home from "./Components/Pages/Home"
+import AllRoutes from "./Components/AllRoutes/AllRoutes"
 
 function App() {
   return (
-    <Home />
+    <AllRoutes />
   );
 }
 
