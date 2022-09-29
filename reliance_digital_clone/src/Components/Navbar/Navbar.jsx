@@ -93,8 +93,9 @@ function Navbar() {
             </Box>
           </Box>
         </Flex>
+<Box>
 
-        <Flex
+<Flex
           alignItems="center"
           gap="2"
           bg="#e42529"
@@ -102,7 +103,6 @@ function Navbar() {
           pl="48px"
           pr="16px"
           justifyContent="space-between"
-          
           fontSize="14px"
           fontWeight="500"
           
@@ -1019,6 +1019,9 @@ function Navbar() {
             </PopoverContent>
           </Popover>
         </Flex>
+
+</Box>
+       
 
         
       </Box>
