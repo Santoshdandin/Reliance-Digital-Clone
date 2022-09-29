@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom"
+
 import {
   Input,
   InputGroup,
@@ -24,7 +26,6 @@ import {
   Text,
   Center,
   Square,
-  Link,
   Portal,
   HStack,
   List,
@@ -107,7 +108,7 @@ function Navbar() {
           
         >
           <Box p="2">
-            <Link>
+            <Link to="/">
               <Img
                 src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
                 w="150px"
@@ -188,7 +189,7 @@ function Navbar() {
               px="6px"
             >
               <FaUser />
-              <Link color="white">Log in</Link>
+              <Link to="/login" color="white">Log in</Link>
             </Box>
           </Box>
         </Flex>
