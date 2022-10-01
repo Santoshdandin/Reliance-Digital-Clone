@@ -178,7 +178,7 @@ function Navbar() {
               px="8px"
             >
               <FaShoppingCart />
-              <Link color="white">Cart</Link>
+              <Link to="/cart" color="white">Cart</Link>
             </Box>
 
             <Box
@@ -208,7 +208,7 @@ function Navbar() {
                 }}
                 fontSize="13px"
               >
-                MOBILES & TABLETS
+               MOBILES & TABLETS 
                 <Icon as={ChevronDownIcon} />
               </Button>
             </PopoverTrigger>
@@ -216,7 +216,7 @@ function Navbar() {
             <Flex  bg="purple.900" color="white" fontSize="13px" pl="34px" py="12px" gap="40px">
                     <List spacing="18px">
                       <Box>
-                      <Heading as='h6' size='xs'><Link>Smartphones</Link></Heading>
+                      <Heading as='h6' size='xs'><Link to="/mobile">Smartphones</Link></Heading>
                       </Box>
                       
                       <Box>

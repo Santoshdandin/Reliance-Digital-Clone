@@ -16,7 +16,10 @@ import {
  Image,
   Alert,
   Center,
+  Link
+  
 } from "@chakra-ui/react";
+// import {Link} from "react-router-dom"
 
 
 
@@ -68,10 +71,12 @@ function Login() {
           <Center>
             <Button w="full"  _hover={{
                     bg: "red.600",
-                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}   >PROCEED</Button>
+                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}>PROCEED</Button>
           </Center>
 
         </FormControl>
+
+        <Box>Don't have account? <Link href="/signup" textDecoration="underline" color="blue" fontSize="16px" fontWeight="semibold">Register</Link> </Box>
 
       </VStack>
 
