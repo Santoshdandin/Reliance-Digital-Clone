@@ -26,7 +26,7 @@ import { StarIcon } from "@chakra-ui/icons";
 
 
 const getData=()=>{
-  return axios.get("https://tan-real-buffalo.cyclic.app/smartWatches")
+  return axios.get("https://tan-real-buffalo.cyclic.app/smartphones")
 }
 
 const itemAlreadyExists = (id,cartItems) =>{
