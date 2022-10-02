@@ -216,7 +216,7 @@ function Navbar() {
             <Flex  bg="purple.900" color="white" fontSize="13px" pl="34px" py="12px" gap="40px">
                     <List spacing="18px">
                       <Box>
-                      <Heading as='h6' size='xs'><Link to="/mobile">Smartphones</Link></Heading>
+                      <Heading as='h6' size='xs'><Link to="/smartphones">Smartphones</Link></Heading>
                       </Box>
                       
                       <Box>

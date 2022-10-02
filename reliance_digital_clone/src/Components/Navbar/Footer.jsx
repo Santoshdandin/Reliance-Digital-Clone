@@ -17,6 +17,7 @@ import {
 import { Icon } from "@chakra-ui/react";
 
 import { FaFacebookSquare, FaTwitter, FaYoutube } from "react-icons/fa";
+import GotoTop from "../Pages/GotoTop";
 
 function Footer() {
   return (
@@ -252,6 +253,8 @@ function Footer() {
           </Center>
         </Box>
       </Box>
+
+      <GotoTop />
     </Box>
   );
 }

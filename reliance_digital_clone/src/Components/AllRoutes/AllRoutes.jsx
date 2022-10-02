@@ -4,7 +4,8 @@ import Cart from '../Pages/Cart'
 import Home from "../Pages/Home"
 import Login from "../Pages/Login"
 import Signup from '../Pages/Signup'
-import Mobile from "../Pages/Mobile"
+import SmartPhones from "../Pages/SmartPhones"
+import Pagenotfound from '../Pages/Pagenotfound'
 
 function AllRoutes() {
   return (
@@ -14,7 +15,8 @@ function AllRoutes() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
-        <Route path="/mobele" element={<Mobile/>}></Route>
+        <Route path="/smartphones" element={<SmartPhones/>}></Route>
+        <Route path="*" element={<Pagenotfound/>}></Route>
     </Routes>
 
     </div>
