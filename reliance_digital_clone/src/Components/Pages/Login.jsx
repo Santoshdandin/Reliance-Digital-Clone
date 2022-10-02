@@ -71,7 +71,7 @@ function Login() {
           <Center>
             <Button w="full"  _hover={{
                     bg: "red.600",
-                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}>PROCEED</Button>
+                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}><Link href="/" textDecoration="underline" >PROCEED</Link></Button>
           </Center>
 
         </FormControl>
