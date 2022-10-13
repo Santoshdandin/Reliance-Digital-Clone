@@ -15,7 +15,8 @@ import {
   Text,
   Image,
   Button,
-  Badge
+  Badge,
+  useToast,
   
 } from '@chakra-ui/react'
 
@@ -191,6 +192,7 @@ const itemAlreadyExists = (id,cartItems) =>{
 
 
 const Product = () => {
+  const toast = useToast()
   const [data,setData]= useState([]);
   const [loading , setLoading] = useState(false);
   const [error, setError] = useState(false)
@@ -245,6 +247,20 @@ setLoading(false)
 
 </Alert>
       </Container>
+    )
+  }
+
+  const t = ( watch)=>{
+    return(
+      toast({
+        title: 'Product Added to Cart.',
+        
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+      }),
+
+      dispatch(addToCart(watch))
     )
   }
 
@@ -346,7 +362,7 @@ setLoading(false)
 
                   <Box display="flex" gap="5px" my="10px" justifyContent="center">
 
-                  <Button colorScheme="gray" varient="outline" disabled={itemAlreadyExists(watch.id,state)} onClick={()=> dispatch(addToCart(watch))}>
+                  <Button colorScheme="red" varient="outline" disabled={itemAlreadyExists(watch.id,state)} onClick={ ()=>  t(watch) }>
                     Add To Cart
                   </Button>
 

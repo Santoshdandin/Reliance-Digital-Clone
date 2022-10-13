@@ -9,14 +9,21 @@ import {
   Button,
   Box,
   Input,
-  AlertIcon,
-  AlertDescription,
+  
   Container,
   VStack,
  Image,
-  Alert,
+  
   Center,
-  Link
+  Link,
+  useToast,
+  toast,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  useDisclosure,
+  CloseButton
   
 } from "@chakra-ui/react";
 // import {Link} from "react-router-dom"
@@ -24,11 +31,27 @@ import {
 
 
 function Login() {
+  const toast = useToast()
   const [nput, setNput] = useState([]);
+  const {
+    isOpen: isVisible,
+    onClose,
+    onOpen,
+  } = useDisclosure({ defaultIsOpen: false })
 
   // const handleInputChange = (e) => setInput(e.target.value);
 
   // const isError = input === "";
+
+  const alertSuccess = ()=>{
+    return (
+      
+alert("Login Success")
+    )
+    
+  }
+
+  
 
   const getData = ()=>{
     return (
@@ -69,9 +92,11 @@ function Login() {
 
         <FormControl>
           <Center>
-            <Button w="full"  _hover={{
+            <Button onClick={alertSuccess}
+ 
+       w="full"  _hover={{
                     bg: "red.600",
-                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}><Link href="/" textDecoration="underline" >PROCEED</Link></Button>
+                  }} variant="outline" color="white" bg="rgb(228, 37, 41)" mt={4}><Link href="/" textDecoration="none" >PROCEED</Link></Button>
           </Center>
 
         </FormControl>
@@ -82,6 +107,10 @@ function Login() {
 
     </Box>
     </Box>
+
+    {
+      
+    }
     
     </div>
     );
